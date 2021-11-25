@@ -1,10 +1,14 @@
 # yaweather
 Yandex Weather API-client
 
+# requirements
 Get Yandex Weather API-key from https://developer.tech.yandex.ru/
 
 Get latitude and longitude of place from maps.
 
+# Example
+
+```
 package main
 
 import (
@@ -33,3 +37,4 @@ func main() {
 	fmt.Println(w.Geo_object.GetLocationInfo())
 	fmt.Println(w.Fact.GetFactWeatherInfo())
 }
+```
