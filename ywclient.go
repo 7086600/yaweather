@@ -29,6 +29,7 @@ func NewClient(apikey string, timeout time.Duration) (*Client, error) {
 }
 
 // Get weather method
+// lat, lon - latitude, longitude of place
 func (c Client) GetWeather(lat, lon float64) (WeatherResponse, error) {
 	url := fmt.Sprintf("https://api.weather.yandex.ru/v2/forecast?lat=%f&lon=%f&limit=1&hours=true&extra=false", lat, lon)
 
